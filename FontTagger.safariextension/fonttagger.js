@@ -56,7 +56,7 @@ var tagPage = function ()
 				if (regexUni.test(text)) {
 					prNode.style.fontFamily = unicodeFonts;
 				} else {
-				    prNode.style.fontFamily = "Zawgyi-One !imporant";
+				    prNode.style.fontFamily = "Zawgyi-One";
 			    }
 
 				while (thisNode.nextSibling) {
@@ -64,7 +64,7 @@ var tagPage = function ()
     				if (regexUni.test(text)) {
     					prNode.style.fontFamily = unicodeFonts;
     				} else {
-					    prNode.style.fontFamily = "Zawgyi-One !important";
+					    prNode.style.fontFamily = "Zawgyi-One";
 				    }
 			    }
 			}
