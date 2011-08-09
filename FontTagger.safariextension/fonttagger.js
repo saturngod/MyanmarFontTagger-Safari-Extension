@@ -27,7 +27,7 @@ var regexMM = new RegExp("[က-အ]+");
 var regexUni = new RegExp("[ဃငဆဇဈဉညဋဌဍဎဏဒဓနဘရဝဟဠအ]်|ျ[က-အ]ါ|ျ[ါ-း]|[^\1031]စ်|\u103e|\u103f|\u1031[^\u1000-\u1021\u103b\u1040\u106a\u106b\u107e-\u1084\u108f\u1090]|\u1031$|\u1031[က-အ]\u1032|\u1025\u102f|\u103c\u103d[\u1000-\u1001]|ည်း|ျင်း|င်|န်း|ျာ");
 var timerID = undefined;
 var mmFonts = new RegExp("Zawgyi-One|Masterpiece Uni Sans|Myanmar3|Yunghkio|Parabaik|WinUni Innwa|Win Uni Innwa|Padauk|MyMyanmar|Panglong");
-var unicodeFonts = "'Masterpiece Uni Sans', 'Myanmar MN', 'Myanmar Sangam MN', Myanmar3, Yunghkio, Parabaik, 'WinUni Innwa','Win Uni Innwa', Padauk, Panglong, 'MyMyanmar Unicode'";
+var unicodeFonts = "'Masterpiece Uni Sans', 'Myanmar MN', 'Myanmar Sangam MN', Myanmar3, Yunghkio, Parabaik, 'WinUni Innwa','Win Uni Innwa', Padauk, Panglong, 'MyMyanmar Unicode' !important";
 
 var tagPage = function () 
 {
@@ -56,7 +56,7 @@ var tagPage = function ()
 				if (regexUni.test(text)) {
 					prNode.style.fontFamily = unicodeFonts;
 				} else {
-				    prNode.style.fontFamily = "Zawgyi-One";
+				    prNode.style.fontFamily = "Zawgyi-One !imporant";
 			    }
 
 				while (thisNode.nextSibling) {
@@ -64,7 +64,7 @@ var tagPage = function ()
     				if (regexUni.test(text)) {
     					prNode.style.fontFamily = unicodeFonts;
     				} else {
-					    prNode.style.fontFamily = "Zawgyi-One";
+					    prNode.style.fontFamily = "Zawgyi-One !important";
 				    }
 			    }
 			}
